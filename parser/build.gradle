@@ -3,6 +3,14 @@ plugins {
     id 'maven-publish'
 }
 
+
+// —————————————————————————————————————————————— 
+// Ajustes para JitPack: tu grupo y tu versión. Puesto por mi siguiendo instruccioens de chatgpt 
+group = 'com.github.ebenito14'
+version = 'v2.3.1-patch1'
+// ——————————————————————————————————————————————
+
+
 android {
     compileSdk 33
     buildToolsVersion '33.0.0'
