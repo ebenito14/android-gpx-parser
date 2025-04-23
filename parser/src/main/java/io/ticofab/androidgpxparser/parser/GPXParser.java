@@ -552,7 +552,7 @@ public class GPXParser {
         return year;
     }
 
-    private Extensions readExtensions(XmlPullParser parser) throws IOException, XmlPullParserException {
+    protected Extensions readExtensions(XmlPullParser parser) throws IOException, XmlPullParserException {
         Extensions.Builder extensionsBuilder = new Extensions.Builder();
 
         parser.require(XmlPullParser.START_TAG, namespace, TAG_EXTENSIONS);
