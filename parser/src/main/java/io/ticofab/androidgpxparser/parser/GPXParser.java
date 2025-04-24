@@ -340,7 +340,7 @@ public class GPXParser {
         return builder.build();
     }
 
-    private Metadata readMetadata(XmlPullParser parser) throws XmlPullParserException, IOException {
+    protected Metadata readMetadata(XmlPullParser parser) throws XmlPullParserException, IOException {
         Metadata.Builder metadataBuilder = new Metadata.Builder();
 
         parser.require(XmlPullParser.START_TAG, namespace, TAG_METADATA);
